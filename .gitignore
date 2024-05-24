@@ -1,0 +1,5 @@
+.env
+node_modules
+
+# Ignore jwt.js file
+jwt.js
