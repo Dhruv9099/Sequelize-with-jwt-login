@@ -20,7 +20,7 @@ afterAll(async () => {
   await db.sequelize.close();
 });
 describe('Auth API', () => {
-  
+
   test('should sign up a new user', async () => {
     const res = await request(app)
       .post('/api/auth/signup')
