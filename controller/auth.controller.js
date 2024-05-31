@@ -1,7 +1,9 @@
+//code// controllers/auth.controller.js
 const db = require('../models');
 const User = db.user;
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
+const request = require("supertest");
 
 // Signup function
 exports.signup = async (req, res) => {
@@ -59,7 +61,7 @@ exports.login = async (req, res) => {
   }
 };
 
-exports.AllSignUpUser= async(req,res)=>{
+exports.AllSignUpUser = async (req, res) => {
 
   try {
 
@@ -72,9 +74,4 @@ exports.AllSignUpUser= async(req,res)=>{
     res.status(500).send({ message: err.message });
 
   }
-    
-
 }
-
-
-

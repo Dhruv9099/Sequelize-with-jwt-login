@@ -14,8 +14,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Sync database
-db.sequelize.sync();
-
+// db.sequelize.sync();
+db.sequelize.sync()
+  .then(() => {
+    console.log("Database synced successfully.");
+  })
+  .catch((err) => {
+    console.log("Failed to sync database: " + err.message);
+  });
 // Routes
 app.use('/api/auth', authRoutes);
 
