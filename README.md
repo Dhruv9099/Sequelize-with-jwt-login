@@ -76,7 +76,7 @@ JWT_SECRET=jwt_generated_token
 
 
 
-for JWT_SECRET just run this command on terminal (node -e "console.log(require('crypto').randomBytes(32).toString('hex'))") and don't forget to save the JWT_SECRET key in your secure Vault. 
+for JWT_SECRET just run this command on terminal node -e "console.log(require('crypto').randomBytes(32).toString('hex'))" and don't forget to save the JWT_SECRET key in your secure Vault. 
 
 
 
