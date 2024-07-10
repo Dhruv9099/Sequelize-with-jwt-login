@@ -1,8 +1,11 @@
-![download](https://github.com/Dhruv9099/Sequelize-with-JWT/assets/92525093/aabe5ad1-bf27-4980-82e9-4fe184fb2945)
 
 
 Creating an Authentication API from Scratch
 This guide will walk you through the process of creating a simple authentication API using Node.js, Express, Sequelize, and MySQL.
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
 
 Step 1: Initialize a New Node.js Project
 Create a new directory for your project:
@@ -15,10 +18,16 @@ npm init -y
 
 
 
+----------------------------------------------------------------------------------------------------------------------------
+
+
 Step 2: Install Dependencies
 Install the necessary dependencies for your project:
 
 npm install express sequelize mysql2 jsonwebtoken bcryptjs dotenv
+
+----------------------------------------------------------------------------------------------------------------------------
+
 
 Step 3: Set Up Project Structure
 Create the following directories and files for your project:
@@ -47,17 +56,26 @@ auth-api/
 
 
 
+----------------------------------------------------------------------------------------------------------------------------
+
+
 Step 4: Set Up Database
 
 Create a MySQL database for your project.
 Update the database configuration in the .env file:
 
 DB_HOST=your_database_host
+
 DB_USER=your_database_username
+
 DB_PASSWORD=your_database_password
+
 DB_NAME=your_database_name
+
 JWT_SECRET=jwt_generated_token
 
+
+----------------------------------------------------------------------------------------------------------------------------
 
 
 Step 5: Define Models and Controllers
@@ -67,10 +85,14 @@ Set up Sequelize in models/index.js to connect to the database and load models.
 Create controller functions for user authentication in controllers/auth.controller.js.
 
 
+----------------------------------------------------------------------------------------------------------------------------
+
 
 Step 6: Define Routes
 Define authentication routes in routes/auth.routes.js using Express Router.
 
+
+----------------------------------------------------------------------------------------------------------------------------
 
 
 Step 7: Set Up Server
@@ -80,12 +102,18 @@ Define route handlers for authentication routes.
 
 
 
+----------------------------------------------------------------------------------------------------------------------------
+
+
 Step 8: Run the Server
 Start the server:
 node index.js
 
 Your authentication API should now be running at http://localhost:3000.
 
+
+
+----------------------------------------------------------------------------------------------------------------------------
 
 
 Step 9: Test the API
@@ -129,8 +157,16 @@ Enter the following JSON payload:
 Click on the Send button to make the request.
 
 
+----------------------------------------------------------------------------------------------------------------------------
+
+
 
 Step 10: Additional Features (Optional)
 Implement admin functionalities for managing user data.
 Enhance security with features like password recovery and role-based access control.
 Set up automated testing and continuous integration.
+
+
+
+[download](https://github.com/Dhruv9099/Sequelize-with-JWT/assets/92525093/aabe5ad1-bf27-4980-82e9-4fe184fb2945)
+
